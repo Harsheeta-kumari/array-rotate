@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+int i,d,n;
+cin>>n;//input the size of array
+int a[n];
+for(i=0;i<n;i++)
+cin>>a[i]; // inputting array elemnts
+cin>>d;
+int b[n]; // an additional array to hold elements
+for(i=0;i<n;i++)
+{
+if(i+d>=n)
+b[i+d-n]=a[i]; // placing the elements from original array to new array.
+else
+b[i+d]=a[i];
+}
+for(i=0;i<n;i++)
+cout<<b[i]<<" ";
+return 0;
+}
+
+//HARSHI CODE 
